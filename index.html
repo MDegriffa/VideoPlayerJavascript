@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MMU video</title>
+		<script src="script/videoScripts.js"></script>
+	</head>
+	
+<body>
+	<header>
+		<h1>Michael Degriffa, 18038490, 07/11/19</h1>
+	</header>
+	
+	<section id="videocontainer">
+		
+		<video 
+		
+			width = 640 height = 360 
+			poster = "images/poster.jpg">
+	
+			<source src = "video/mp4/mmu.mp4" type = "video/mp4">
+			<source src = "video/webm/MMU.mp4" type = "video/webm">
+			
+		</video>
+		
+		<div id = "videoControls">
+			<button type = "button" id = "jumpBack"><<</button>
+			<button type = "button" id = "playPause">Play</button>
+			<button type = "button" id = "mute"> Mute</button>
+			<button type = "button" id = "jumpForward">>></button>
+			<span id = "videoTime"> 00:00</span>
+			<input type = "range" id = "seekBar" min = 0 max = 100 step = 1 value = 0></input>
+			<span id = "remainingTime"> 00:00 </span>
+			<input type = "range" id = "volumeBar" min = 0 max = 10 step = 1 value = 5></input>
+			<span id = "percentageAudio">5</span>
+			<select id = "speedSelector">
+				<option value ="2">2x</option>
+				<option value ="1.75">1.75x</option> 
+				<option value ="1.5">1.5x</option> 
+				<option value ="1.25">1.25x</option> 
+				<option value ="1" selected = "selected">Normal</option>
+				<option value ="0.75">0.75x</option> 
+				<option value ="0.5">0.5x</option> 
+			
+		</div>
+	
+	
+	</section>
+</body>
+</html>
